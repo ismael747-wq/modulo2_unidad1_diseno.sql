@@ -1,0 +1,6 @@
+create table productos (
+id_producto int not null,
+descripcion varchar (255),
+precio decimal (10,2)not null,
+esta_activo varchar (1) not null,
+);
