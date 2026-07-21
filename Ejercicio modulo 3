@@ -5,7 +5,7 @@
 -- ======================================
 -- Seccion DDL --------------------------
 -- se crea la tabla dimension "inventario"
-drop table if exists inventario
+drop table if exists inventario;
 create table inventario (
 -- se le da a "id_producto" valor entero y se define como PK
 id_producto int not null primary key,
@@ -16,5 +16,5 @@ stock_actual int,
 stock_minimo int,
 fecha_ingreso date,
 -- la columna "activo" es numerica entero para distinguir producots disponibles
-activo tinyint (1) not null,
+activo tinyint not null,
 );
