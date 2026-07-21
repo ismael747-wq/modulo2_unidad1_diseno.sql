@@ -1,0 +1,20 @@
+-- ======================================
+-- BodegaTech - Script de Inventario
+-- Autor: Gustavo Viñazca
+-- Fecha: 21-07-2026
+-- ======================================
+-- Seccion DDL --------------------------
+-- se crea la tabla dimension "inventario"
+drop table if exists inventario
+create table inventario (
+-- se le da a "id_producto" valor entero y se define como PK
+id_producto int not null primary key,
+nombre_producto varchar (100),
+categoria varchar (50),
+precio_unitario decimal (10,2),
+stock_actual int,
+stock_minimo int,
+fecha_ingreso date,
+-- la columna "activo" es numerica entero para distinguir producots disponibles
+activo tinyint (1) not null,
+);
